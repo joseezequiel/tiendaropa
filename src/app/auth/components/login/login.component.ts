@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
 
   login(event: Event) {
     event.preventDefault();
+    console.log("Subido por jose Pepe.");
     if (this.form.valid) {
       const value = this.form.value;
       this.authService.login(value.email, value.password)
